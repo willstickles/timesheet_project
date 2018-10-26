@@ -1,0 +1,32 @@
+<?php $_shouldextend['5aa3faa2c8ede']=1; ?>
+
+<?php $this->startSection( 'title', 'Login' ); ?>
+
+<?php $this->startSection( 'content' ); ?>
+
+    <h1>Log in</h1>
+
+    <form action="/login/create" method="post">
+        <div class="form-group">
+            <label for="inputEmail">Email address</label>
+            <input type="email" id="inputEmail" class="form-control" name="email" placeholder="Email address" value="<?php echo static::e(isset($email) ? $email : ''); ?>" autofocus>
+        </div>
+
+        <div class="form-group">
+            <label for="inputPassword">Password</label>
+            <input type="password" id="inputPassword" class="form-control" name="password" placeholder="Password">
+        </div>
+
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" name="remember_me" <?php if( isset( $remember_me ) ): ?> checked="checked" <?php endif; ?> > Remember me
+            </label>
+        </div>
+
+        <button class="btn btn-default" type="submit">Log in</button>
+        <a href="/password/forgot">Forgot password?</a>
+
+    </form>
+
+<?php $this->stopSection(); ?>
+<?php if (@$_shouldextend['5aa3faa2c8ede']) { echo $this->runChild( 'master' ); } ?>

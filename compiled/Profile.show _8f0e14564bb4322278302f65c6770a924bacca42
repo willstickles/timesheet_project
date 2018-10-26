@@ -1,0 +1,19 @@
+<?php $_shouldextend['5aa4654000efd']=1; ?>
+
+<?php $this->startSection( 'title', 'Profile' ); ?>
+
+<?php $this->startSection( 'content' ); ?>
+
+    <h1>Profile</h1>
+
+    <dl class="dl-horizontal">
+        <dt>Name</dt>
+        <dd><?php echo static::e($user->name); ?></dd>
+        <dt>email</dt>
+        <dd><?php echo static::e($user->email); ?></dd>
+    </dl>
+
+    <a href="/profile/edit">Edit</a>
+
+<?php $this->stopSection(); ?>
+<?php if (@$_shouldextend['5aa4654000efd']) { echo $this->runChild( 'master' ); } ?>

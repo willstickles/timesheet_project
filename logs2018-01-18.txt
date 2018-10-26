@@ -1,0 +1,2 @@
+[18-Jan-2018 18:23:15 UTC] <p>Uncaught exception: 'Exception'</p><p>Message: 'No route matched.'</p><p>Stack trace:<pre>#0 /vagrant/blademvc.local/public/index.php(41): Core\Router->dispatch('products')
+#1 {main}</pre></p><p>Thrown in '/vagrant/blademvc.local/Core/Router.php' on line 125</p>

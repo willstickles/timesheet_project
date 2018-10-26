@@ -1,0 +1,11 @@
+<?php $_shouldextend['5a73688e4c6b1']=1; ?>
+
+<?php $this->startSection( 'title', 'Page not found' ); ?>
+
+<?php $this->startSection( 'content' ); ?>
+
+    <h1>Page not found</h1>
+    <p>Sorry, that page doesn't exist.</p>
+
+<?php $this->stopSection(); ?>
+<?php if (@$_shouldextend['5a73688e4c6b1']) { echo $this->runChild( 'master' ); } ?>

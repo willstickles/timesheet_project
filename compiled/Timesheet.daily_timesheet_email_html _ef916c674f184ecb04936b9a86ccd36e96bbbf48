@@ -1,0 +1,57 @@
+<h1>Daily Timesheet</h1>
+
+<table cellspacing="0" cellpadding="10" border="0">
+    <tr>
+        <td>
+            <table cellspacing="0" cellpadding="10" border="0">
+                <tr>
+                    <th align="left" cellpadding="2">Employee Name</th>
+                    <th align="left" cellpadding="2">Email address</th>
+                    <th align="left" cellpadding="2">Lunch Hours</th>
+                    <th align="left" cellpadding="2">Start Time</th>
+                    <th align="left" cellpadding="2">End Time</th>
+                    <th align="left" cellpadding="2">Total Hours</th>
+                    <th align="left" cellpadding="2">Start Location</th>
+                    <th align="left" cellpadding="2">Report Date</th>
+                </tr>
+                <tr>
+                    <td align="left" cellpadding="2"><?php echo static::e($user->name); ?></td>
+                    <td align="left" cellpadding="2"><?php echo static::e($user->email); ?></td>
+                    <td align="left" cellpadding="2"><?php echo static::e($hours->lunch_hours); ?></td>
+                    <td align="left" cellpadding="2"><?php echo static::e($hours->start_time); ?></td>
+                    <td align="left" cellpadding="2"><?php echo static::e($hours->end_time); ?></td>
+                    <td align="left" cellpadding="2"><?php echo static::e($hours->total_hours); ?></td>
+                    <td align="left" cellpadding="2"><?php echo static::e($hours->start_location); ?></td>
+                    <td align="left" cellpadding="2"><?php echo static::e($hours->report_date); ?></td>
+                </tr>
+            </table>
+            <?php $__currentLoopData = $projects; $this->addLoop($__currentLoopData); foreach($__currentLoopData as $project): $this->incrementLoopIndices(); $loop = $this->getFirstLoop(); ?>
+                <table cellspacing="0" cellpadding="10" border="0">
+                    <tr>
+                        <th align="left" cellpadding="2">Project id</th>
+                        <th align="left" cellpadding="2">Project name</th>
+                        <th align="left" cellpadding="2">Client name</th>
+                        <th align="left" cellpadding="2">Time arrived</th>
+                        <th align="left" cellpadding="2">Time departed</th>
+                        <th align="left" cellpadding="2">Densities</th>
+                        <th align="left" cellpadding="2">Concrete</th>
+                        <th align="left" cellpadding="2">Samples</th>
+                        <th align="left" cellpadding="2">Remarks</th>
+                    </tr>
+                    <tr>
+                        <td align="left" cellpadding="2"><?php echo static::e($project->project_id); ?></td>
+                        <td align="left" cellpadding="2"><?php echo static::e($project->project_name); ?></td>
+                        <td align="left" cellpadding="2"><?php echo static::e($project->client_name); ?></td>
+                        <td align="left" cellpadding="2"><?php echo static::e($project->time_arrived); ?></td>
+                        <td align="left" cellpadding="2"><?php echo static::e($project->time_departed); ?></td>
+                        <td align="left" cellpadding="2"><?php echo static::e($project->densities); ?></td>
+                        <td align="left" cellpadding="2"><?php echo static::e($project->concrete); ?></td>
+                        <td align="left" cellpadding="2"><?php echo static::e($project->samples); ?></td>
+                        <td align="left" cellpadding="2"><?php echo static::e($project->remarks); ?></td>
+                    </tr>
+                </table>
+            <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
+        </td>
+    </tr>
+</table>
+

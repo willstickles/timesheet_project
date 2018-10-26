@@ -1,0 +1,21 @@
+<?php $_shouldextend['5aa4655c0f71f']=1; ?>
+
+<?php $this->startSection( 'title', 'Home' ); ?>
+
+
+<?php $this->startSection( 'css' ); ?>
+
+<?php $this->stopSection(); ?>
+
+<?php $this->startSection( 'content' ); ?>
+
+    <h1>Welcome</h1>
+
+    <?php if( $current_user ): ?>
+        Hello <?php echo static::e($current_user->name); ?>.
+    <?php else: ?>
+    <a href="/signup/new">Sign up</a> or <a href="/login">Log in</a>
+    <?php endif; ?>
+
+<?php $this->stopSection(); ?>
+<?php if (@$_shouldextend['5aa4655c0f71f']) { echo $this->runChild( 'master' ); } ?>

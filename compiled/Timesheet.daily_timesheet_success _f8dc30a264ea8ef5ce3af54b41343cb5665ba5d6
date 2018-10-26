@@ -1,0 +1,14 @@
+<?php $_shouldextend['5aa3fb6f1d828']=1; ?>
+
+<?php $this->startSection( 'title', 'Daily Timesheet' ); ?>
+
+<?php $this->startSection( 'content' ); ?>
+
+    <h1>Daily Timesheet</h1>
+
+    <p>Timesheet submitted successfully!</p>
+
+    <p>Check your email to see submitted hours.</p>
+
+<?php $this->stopSection(); ?>
+<?php if (@$_shouldextend['5aa3fb6f1d828']) { echo $this->runChild( 'master' ); } ?>

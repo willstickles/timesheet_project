@@ -1,0 +1,96 @@
+[18-Jan-2018 18:27:53 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace:#0 /vagrant/blademvc.local/public/index.php(41): Core\Router->dispatch('products')
+#1 {main}
+Thrown in '/vagrant/blademvc.local/Core/Router.php' on line 125
+[18-Jan-2018 18:28:31 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace:#0 /vagrant/blademvc.local/public/index.php(41): Core\Router->dispatch('products')
+#1 {main}
+Thrown in '/vagrant/blademvc.local/Core/Router.php' on line 125
+[18-Jan-2018 18:37:49 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace:#0 /vagrant/blademvc.local/public/index.php(41): Core\Router->dispatch('products')
+#1 {main}
+Thrown in '/vagrant/blademvc.local/Core/Router.php' on line 125
+[18-Jan-2018 18:38:10 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace:#0 /vagrant/blademvc.local/public/index.php(41): Core\Router->dispatch('products')
+#1 {main}
+Thrown in '/vagrant/blademvc.local/Core/Router.php' on line 125
+[18-Jan-2018 18:38:19 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace:#0 /vagrant/blademvc.local/public/index.php(41): Core\Router->dispatch('products')
+#1 {main}
+Thrown in '/vagrant/blademvc.local/Core/Router.php' on line 125
+[18-Jan-2018 18:38:33 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace:#0 /vagrant/blademvc.local/public/index.php(41): Core\Router->dispatch('products')
+#1 {main}
+Thrown in '/vagrant/blademvc.local/Core/Router.php' on line 125
+[18-Jan-2018 18:39:37 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace:#0 /vagrant/blademvc.local/public/index.php(41): Core\Router->dispatch('products')
+#1 {main}
+Thrown in '/vagrant/blademvc.local/Core/Router.php' on line 125
+[18-Jan-2018 18:49:23 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace:#0 /vagrant/blademvc.local/public/index.php(41): Core\Router->dispatch('products')
+#1 {main}
+Thrown in '/vagrant/blademvc.local/Core/Router.php' on line 125
+[18-Jan-2018 18:49:48 UTC] Uncaught exception: 'Exception' with message 'Method neeAction not found in controller App\Controllers\Posts'
+Stack trace:#0 /vagrant/blademvc.local/Core/Router.php(117): Core\Controller->__call('nee', Array)
+#1 /vagrant/blademvc.local/public/index.php(41): Core\Router->dispatch('posts/nee')
+#2 {main}
+Thrown in '/vagrant/blademvc.local/Core/Controller.php' on line 44
+[18-Jan-2018 21:11:10 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace:#0 /vagrant/blademvc.local/public/index.php(41): Core\Router->dispatch('assets/ico/appl...')
+#1 {main}
+Thrown in '/vagrant/blademvc.local/Core/Router.php' on line 125
+[18-Jan-2018 21:11:10 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace:#0 /vagrant/blademvc.local/public/index.php(41): Core\Router->dispatch('assets/ico/favi...')
+#1 {main}
+Thrown in '/vagrant/blademvc.local/Core/Router.php' on line 125
+[18-Jan-2018 21:56:37 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace:#0 /vagrant/blademvc.local/public/index.php(41): Core\Router->dispatch('signup/posts/in...')
+#1 {main}
+Thrown in '/vagrant/blademvc.local/Core/Router.php' on line 125
+[18-Jan-2018 21:56:39 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace:#0 /vagrant/blademvc.local/public/index.php(41): Core\Router->dispatch('signup/posts/si...')
+#1 {main}
+Thrown in '/vagrant/blademvc.local/Core/Router.php' on line 125
+[18-Jan-2018 21:59:38 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace:#0 /vagrant/blademvc.local/public/index.php(41): Core\Router->dispatch('signup/posts/si...')
+#1 {main}
+Thrown in '/vagrant/blademvc.local/Core/Router.php' on line 125
+[18-Jan-2018 22:00:19 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace:#0 /vagrant/blademvc.local/public/index.php(41): Core\Router->dispatch('signup/posts/si...')
+#1 {main}
+Thrown in '/vagrant/blademvc.local/Core/Router.php' on line 125
+[18-Jan-2018 22:00:20 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Error([string $message [, long $code [, Throwable $previous = NULL]]]) in /vagrant/blademvc.local/Core/Error.php:23
+Stack trace:
+#0 /vagrant/blademvc.local/Core/Error.php(23): Error->__construct('Undefined varia...', 0, 8, '/vagrant/bladem...', 41)
+#1 /vagrant/blademvc.local/compiled/master _4f26aeafdb2367620a393c973eddbe8f8b846ebd(41): Core\Error::errorHandler(8, 'Undefined varia...', '/vagrant/bladem...', 41, Array)
+#2 /vagrant/blademvc.local/vendor/eftec/bladeone/BladeOne.php(1353): include('/vagrant/bladem...')
+#3 /vagrant/blademvc.local/vendor/eftec/bladeone/BladeOne.php(291): eftec\bladeone\BladeOne->evaluatePath('/vagrant/bladem...', Array)
+#4 /vagrant/blademvc.local/vendor/eftec/bladeone/BladeOne.php(235): eftec\bladeone\BladeOne->runInternal('master', Array, false, false, 0)
+#5 /vagrant/blademvc.local/compiled/404 _c35a9fc52bb556c79f8fa540df587a2bf465b940(11): eftec\bladeone\BladeOne->runChild('master')
+#6 /vagrant/blademvc.local/vendor/eftec/bladeone/BladeOne.php in /vagrant/blademvc.local/Core/Error.php on line 23
+[18-Jan-2018 22:00:21 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace:#0 /vagrant/blademvc.local/public/index.php(41): Core\Router->dispatch('signup/posts/si...')
+#1 {main}
+Thrown in '/vagrant/blademvc.local/Core/Router.php' on line 125
+[18-Jan-2018 22:00:21 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Error([string $message [, long $code [, Throwable $previous = NULL]]]) in /vagrant/blademvc.local/Core/Error.php:23
+Stack trace:
+#0 /vagrant/blademvc.local/Core/Error.php(23): Error->__construct('Undefined varia...', 0, 8, '/vagrant/bladem...', 41)
+#1 /vagrant/blademvc.local/compiled/master _4f26aeafdb2367620a393c973eddbe8f8b846ebd(41): Core\Error::errorHandler(8, 'Undefined varia...', '/vagrant/bladem...', 41, Array)
+#2 /vagrant/blademvc.local/vendor/eftec/bladeone/BladeOne.php(1353): include('/vagrant/bladem...')
+#3 /vagrant/blademvc.local/vendor/eftec/bladeone/BladeOne.php(291): eftec\bladeone\BladeOne->evaluatePath('/vagrant/bladem...', Array)
+#4 /vagrant/blademvc.local/vendor/eftec/bladeone/BladeOne.php(235): eftec\bladeone\BladeOne->runInternal('master', Array, false, false, 0)
+#5 /vagrant/blademvc.local/compiled/404 _c35a9fc52bb556c79f8fa540df587a2bf465b940(11): eftec\bladeone\BladeOne->runChild('master')
+#6 /vagrant/blademvc.local/vendor/eftec/bladeone/BladeOne.php in /vagrant/blademvc.local/Core/Error.php on line 23
+[18-Jan-2018 22:00:36 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace:#0 /vagrant/blademvc.local/public/index.php(41): Core\Router->dispatch('signup/posts/si...')
+#1 {main}
+Thrown in '/vagrant/blademvc.local/Core/Router.php' on line 125
+[18-Jan-2018 22:00:36 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Error([string $message [, long $code [, Throwable $previous = NULL]]]) in /vagrant/blademvc.local/Core/Error.php:23
+Stack trace:
+#0 /vagrant/blademvc.local/Core/Error.php(23): Error->__construct('Undefined varia...', 0, 8, '/vagrant/bladem...', 41)
+#1 /vagrant/blademvc.local/compiled/master _4f26aeafdb2367620a393c973eddbe8f8b846ebd(41): Core\Error::errorHandler(8, 'Undefined varia...', '/vagrant/bladem...', 41, Array)
+#2 /vagrant/blademvc.local/vendor/eftec/bladeone/BladeOne.php(1353): include('/vagrant/bladem...')
+#3 /vagrant/blademvc.local/vendor/eftec/bladeone/BladeOne.php(291): eftec\bladeone\BladeOne->evaluatePath('/vagrant/bladem...', Array)
+#4 /vagrant/blademvc.local/vendor/eftec/bladeone/BladeOne.php(235): eftec\bladeone\BladeOne->runInternal('master', Array, false, false, 0)
+#5 /vagrant/blademvc.local/compiled/404 _c35a9fc52bb556c79f8fa540df587a2bf465b940(11): eftec\bladeone\BladeOne->runChild('master')
+#6 /vagrant/blademvc.local/vendor/eftec/bladeone/BladeOne.php in /vagrant/blademvc.local/Core/Error.php on line 23

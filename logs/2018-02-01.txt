@@ -1,0 +1,12 @@
+[01-Feb-2018 19:20:46 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace:#0 /vagrant/blademvc.local/public/index.php(41): Core\Router->dispatch('favicon.ico')
+#1 {main}
+Thrown in '/vagrant/blademvc.local/Core/Router.php' on line 125
+[01-Feb-2018 19:21:16 UTC] Uncaught exception: 'Error' with message 'Call to a member function prepare() on null'
+Stack trace:#0 /vagrant/blademvc.local/App/Controllers/Signup.php(34): App\Models\User->save()
+#1 [internal function]: App\Controllers\Signup->createAction()
+#2 /vagrant/blademvc.local/Core/Controller.php(40): call_user_func_array(Array, Array)
+#3 /vagrant/blademvc.local/Core/Router.php(117): Core\Controller->__call('create', Array)
+#4 /vagrant/blademvc.local/public/index.php(41): Core\Router->dispatch('signup/create')
+#5 {main}
+Thrown in '/vagrant/blademvc.local/App/Models/User.php' on line 58

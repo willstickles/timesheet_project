@@ -1,0 +1,19 @@
+<?php $_shouldextend['5a79981ba54bd']=1; ?>
+
+<?php $this->startSection( 'title', 'Posts' ); ?>
+
+<?php $this->startSection( 'content' ); ?>
+
+    <h1>Posts</h1>
+
+    <ul>
+        <?php $__currentLoopData = $posts; $this->addLoop($__currentLoopData); foreach($__currentLoopData as $post): $this->incrementLoopIndices(); $loop = $this->getFirstLoop(); ?>
+            <li>
+                <h2><?php echo static::e($post['title']); ?></h2>
+                <p><?php echo static::e($post['content']); ?></p>
+            </li>
+        <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
+    </ul>
+
+<?php $this->stopSection(); ?>
+<?php if (@$_shouldextend['5a79981ba54bd']) { echo $this->runChild( 'master' ); } ?>

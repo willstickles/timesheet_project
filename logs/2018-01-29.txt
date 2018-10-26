@@ -1,0 +1,253 @@
+[29-Jan-2018 13:34:55 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace:#0 /vagrant/blademvc.local/public/index.php(41): Core\Router->dispatch('favicon.ico')
+#1 {main}
+Thrown in '/vagrant/blademvc.local/Core/Router.php' on line 125
+[29-Jan-2018 16:54:20 UTC] Uncaught exception: 'Error' with message 'Wrong parameters for Error([string $message [, long $code [, Throwable $previous = NULL]]])'
+Stack trace:#0 /vagrant/blademvc.local/Core/Error.php(23): Error->__construct('Undefined prope...', 0, 8, '/vagrant/bladem...', 48)
+#1 /vagrant/blademvc.local/App/Models/User.php(48): Core\Error::errorHandler(8, 'Undefined prope...', '/vagrant/bladem...', 48, Array)
+#2 /vagrant/blademvc.local/App/Controllers/Signup.php(35): App\Models\User->save()
+#3 [internal function]: App\Controllers\Signup->createAction()
+#4 /vagrant/blademvc.local/Core/Controller.php(40): call_user_func_array(Array, Array)
+#5 /vagrant/blademvc.local/Core/Router.php(117): Core\Controller->__call('create', Array)
+#6 /vagrant/blademvc.local/public/index.php(41): Core\Router->dispatch('signup/create')
+#7 {main}
+Thrown in '/vagrant/blademvc.local/Core/Error.php' on line 23
+[29-Jan-2018 17:19:48 UTC] Uncaught exception: 'Error' with message 'Wrong parameters for Error([string $message [, long $code [, Throwable $previous = NULL]]])'
+Stack trace:#0 /vagrant/blademvc.local/Core/Error.php(23): Error->__construct('Undefined prope...', 0, 8, '/vagrant/bladem...', 48)
+#1 /vagrant/blademvc.local/App/Models/User.ph nnnp(48): Core\Error::errorHandler(8, 'Undefined prope...', '/vagrant/bladem...', 48, Array)
+#2 /vagrant/blademvc.local/App/Controllers/Signup.php(35): App\Models\User->save()
+#3 [internal function]: App\Controllers\Signup->createAction()
+#4 /vagrant/blademvc.local/Core/Controller.php(40): call_user_func_array(Array, Array)
+#5 /vagrant/blademvc.local/Core/Router.php(117): Core\Controller->__call('create', Array)
+#6 /vagrant/blademvc.local/public/index.php(41): Core\Router->dispatch('signup/create')
+#7 {main}
+Thrown in '/vagrant/blademvc.local/Core/Error.php' on line 23
+[29-Jan-2018 17:20:54 UTC] Uncaught exception: 'Error' with message 'Wrong parameters for Error([string $message [, long $code [, Throwable $previous = NULL]]])'
+Stack trace:#0 /vagrant/blademvc.local/Core/Error.php(23): Error->__construct('Undefined prope...', 0, 8, '/vagrant/bladem...', 48)
+#1 /vagrant/blademvc.local/App/Models/User.php(48): Core\Error::errorHandler(8, 'Undefined prope...', '/vagrant/bladem...', 48, Array)
+#2 /vagrant/blademvc.local/App/Controllers/Signup.php(35): App\Models\User->save()
+#3 [internal function]: App\Controllers\Signup->createAction()
+#4 /vagrant/blademvc.local/Core/Controller.php(40): call_user_func_array(Array, Array)
+#5 /vagrant/blademvc.local/Core/Router.php(117): Core\Controller->__call('create', Array)
+#6 /vagrant/blademvc.local/public/index.php(41): Core\Router->dispatch('signup/create')
+#7 {main}
+Thrown in '/vagrant/blademvc.local/Core/Error.php' on line 23
+[29-Jan-2018 17:23:39 UTC] Uncaught exception: 'ErrorException' with message 'Undefined property: App\Models\User::$name'
+Stack trace:#0 /vagrant/blademvc.local/App/Models/User.php(48): Core\Error::errorHandler(8, 'Undefined prope...', '/vagrant/bladem...', 48, Array)
+#1 /vagrant/blademvc.local/App/Controllers/Signup.php(35): App\Models\User->save()
+#2 [internal function]: App\Controllers\Signup->createAction()
+#3 /vagrant/blademvc.local/Core/Controller.php(40): call_user_func_array(Array, Array)
+#4 /vagrant/blademvc.local/Core/Router.php(117): Core\Controller->__call('create', Array)
+#5 /vagrant/blademvc.local/public/index.php(41): Core\Router->dispatch('signup/create')
+#6 {main}
+Thrown in '/vagrant/blademvc.local/App/Models/User.php' on line 48
+[29-Jan-2018 17:29:40 UTC] Uncaught exception: 'ErrorException' with message 'Undefined property: App\Models\User::$name'
+Stack trace:#0 /vagrant/blademvc.local/App/Models/User.php(48): Core\Error::errorHandler(8, 'Undefined prope...', '/vagrant/bladem...', 48, Array)
+#1 /vagrant/blademvc.local/App/Controllers/Signup.php(43): App\Models\User->save()
+#2 [internal function]: App\Controllers\Signup->createAction()
+#3 /vagrant/blademvc.local/Core/Controller.php(40): call_user_func_array(Array, Array)
+#4 /vagrant/blademvc.local/Core/Router.php(117): Core\Controller->__call('create', Array)
+#5 /vagrant/blademvc.local/public/index.php(41): Core\Router->dispatch('signup/create')
+#6 {main}
+Thrown in '/vagrant/blademvc.local/App/Models/User.php' on line 48
+[29-Jan-2018 17:34:19 UTC] Uncaught exception: 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'will.stickles.sensei@gmail.com' for key 'email''
+Stack trace:#0 /vagrant/blademvc.local/App/Models/User.php(52): PDOStatement->execute()
+#1 /vagrant/blademvc.local/App/Controllers/Signup.php(43): App\Models\User->save()
+#2 [internal function]: App\Controllers\Signup->createAction()
+#3 /vagrant/blademvc.local/Core/Controller.php(40): call_user_func_array(Array, Array)
+#4 /vagrant/blademvc.local/Core/Router.php(117): Core\Controller->__call('create', Array)
+#5 /vagrant/blademvc.local/public/index.php(41): Core\Router->dispatch('signup/create')
+#6 {main}
+Thrown in '/vagrant/blademvc.local/App/Models/User.php' on line 52
+[29-Jan-2018 17:34:43 UTC] Uncaught exception: 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'will.stickles.sensei@gmail.com' for key 'email''
+Stack trace:#0 /vagrant/blademvc.local/App/Models/User.php(52): PDOStatement->execute()
+#1 /vagrant/blademvc.local/App/Controllers/Signup.php(43): App\Models\User->save()
+#2 [internal function]: App\Controllers\Signup->createAction()
+#3 /vagrant/blademvc.local/Core/Controller.php(40): call_user_func_array(Array, Array)
+#4 /vagrant/blademvc.local/Core/Router.php(117): Core\Controller->__call('create', Array)
+#5 /vagrant/blademvc.local/public/index.php(41): Core\Router->dispatch('signup/create')
+#6 {main}
+Thrown in '/vagrant/blademvc.local/App/Models/User.php' on line 52
+[29-Jan-2018 17:35:17 UTC] Uncaught exception: 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'will.stickles.sensei@gmail.com' for key 'email''
+Stack trace:#0 /vagrant/blademvc.local/App/Models/User.php(52): PDOStatement->execute()
+#1 /vagrant/blademvc.local/App/Controllers/Signup.php(43): App\Models\User->save()
+#2 [internal function]: App\Controllers\Signup->createAction()
+#3 /vagrant/blademvc.local/Core/Controller.php(40): call_user_func_array(Array, Array)
+#4 /vagrant/blademvc.local/Core/Router.php(117): Core\Controller->__call('create', Array)
+#5 /vagrant/blademvc.local/public/index.php(41): Core\Router->dispatch('signup/create')
+#6 {main}
+Thrown in '/vagrant/blademvc.local/App/Models/User.php' on line 52
+[29-Jan-2018 18:02:02 UTC] Uncaught exception: 'ErrorException' with message 'preg_match(): Unknown modifier 'd''
+Stack trace:#0 [internal function]: Core\Error::errorHandler(2, 'preg_match(): U...', '/vagrant/bladem...', 99, Array)
+#1 /vagrant/blademvc.local/App/Models/User.php(99): preg_match('/.*/d+.*/i', '')
+#2 /vagrant/blademvc.local/App/Models/User.php(51): App\Models\User->validate()
+#3 /vagrant/blademvc.local/App/Controllers/Signup.php(43): App\Models\User->save()
+#4 [internal function]: App\Controllers\Signup->createAction()
+#5 /vagrant/blademvc.local/Core/Controller.php(40): call_user_func_array(Array, Array)
+#6 /vagrant/blademvc.local/Core/Router.php(117): Core\Controller->__call('create', Array)
+#7 /vagrant/blademvc.local/public/index.php(41): Core\Router->dispatch('signup/create')
+#8 {main}
+Thrown in '/vagrant/blademvc.local/App/Models/User.php' on line 99
+[29-Jan-2018 18:02:29 UTC] Uncaught exception: 'ErrorException' with message 'preg_match(): Unknown modifier 'd''
+Stack trace:#0 [internal function]: Core\Error::errorHandler(2, 'preg_match(): U...', '/vagrant/bladem...', 99, Array)
+#1 /vagrant/blademvc.local/App/Models/User.php(99): preg_match('/.*/d+.*/i', '')
+#2 /vagrant/blademvc.local/App/Models/User.php(51): App\Models\User->validate()
+#3 /vagrant/blademvc.local/App/Controllers/Signup.php(42): App\Models\User->save()
+#4 [internal function]: App\Controllers\Signup->createAction()
+#5 /vagrant/blademvc.local/Core/Controller.php(40): call_user_func_array(Array, Array)
+#6 /vagrant/blademvc.local/Core/Router.php(117): Core\Controller->__call('create', Array)
+#7 /vagrant/blademvc.local/public/index.php(41): Core\Router->dispatch('signup/create')
+#8 {main}
+Thrown in '/vagrant/blademvc.local/App/Models/User.php' on line 99
+[29-Jan-2018 18:05:03 UTC] Uncaught exception: 'ErrorException' with message 'preg_match(): Unknown modifier 'd''
+Stack trace:#0 [internal function]: Core\Error::errorHandler(2, 'preg_match(): U...', '/vagrant/bladem...', 99, Array)
+#1 /vagrant/blademvc.local/App/Models/User.php(99): preg_match('/.*/d+.*/i', '')
+#2 /vagrant/blademvc.local/App/Models/User.php(51): App\Models\User->validate()
+#3 /vagrant/blademvc.local/App/Controllers/Signup.php(42): App\Models\User->save()
+#4 [internal function]: App\Controllers\Signup->createAction()
+#5 /vagrant/blademvc.local/Core/Controller.php(40): call_user_func_array(Array, Array)
+#6 /vagrant/blademvc.local/Core/Router.php(117): Core\Controller->__call('create', Array)
+#7 /vagrant/blademvc.local/public/index.php(41): Core\Router->dispatch('signup/create')
+#8 {main}
+Thrown in '/vagrant/blademvc.local/App/Models/User.php' on line 99
+[29-Jan-2018 18:07:09 UTC] Uncaught exception: 'ErrorException' with message 'preg_match(): Unknown modifier 'd''
+Stack trace:#0 [internal function]: Core\Error::errorHandler(2, 'preg_match(): U...', '/vagrant/bladem...', 99, Array)
+#1 /vagrant/blademvc.local/App/Models/User.php(99): preg_match('/.*/d.*/i', '')
+#2 /vagrant/blademvc.local/App/Models/User.php(51): App\Models\User->validate()
+#3 /vagrant/blademvc.local/App/Controllers/Signup.php(42): App\Models\User->save()
+#4 [internal function]: App\Controllers\Signup->createAction()
+#5 /vagrant/blademvc.local/Core/Controller.php(40): call_user_func_array(Array, Array)
+#6 /vagrant/blademvc.local/Core/Router.php(117): Core\Controller->__call('create', Array)
+#7 /vagrant/blademvc.local/public/index.php(41): Core\Router->dispatch('signup/create')
+#8 {main}
+Thrown in '/vagrant/blademvc.local/App/Models/User.php' on line 99
+[29-Jan-2018 18:08:52 UTC] Uncaught exception: 'ErrorException' with message 'preg_match(): Unknown modifier 'd''
+Stack trace:#0 [internal function]: Core\Error::errorHandler(2, 'preg_match(): U...', '/vagrant/bladem...', 99, Array)
+#1 /vagrant/blademvc.local/App/Models/User.php(99): preg_match('/.*/d.*/i', '')
+#2 /vagrant/blademvc.local/App/Models/User.php(51): App\Models\User->validate()
+#3 /vagrant/blademvc.local/App/Controllers/Signup.php(42): App\Models\User->save()
+#4 [internal function]: App\Controllers\Signup->createAction()
+#5 /vagrant/blademvc.local/Core/Controller.php(40): call_user_func_array(Array, Array)
+#6 /vagrant/blademvc.local/Core/Router.php(117): Core\Controller->__call('create', Array)
+#7 /vagrant/blademvc.local/public/index.php(41): Core\Router->dispatch('signup/create')
+#8 {main}
+Thrown in '/vagrant/blademvc.local/App/Models/User.php' on line 99
+[29-Jan-2018 18:09:39 UTC] Uncaught exception: 'ErrorException' with message 'preg_match(): Unknown modifier 'd''
+Stack trace:#0 [internal function]: Core\Error::errorHandler(2, 'preg_match(): U...', '/vagrant/bladem...', 99, Array)
+#1 /vagrant/blademvc.local/App/Models/User.php(99): preg_match('/.*/d.*/i', '')
+#2 /vagrant/blademvc.local/App/Models/User.php(51): App\Models\User->validate()
+#3 /vagrant/blademvc.local/App/Controllers/Signup.php(42): App\Models\User->save()
+#4 [internal function]: App\Controllers\Signup->createAction()
+#5 /vagrant/blademvc.local/Core/Controller.php(40): call_user_func_array(Array, Array)
+#6 /vagrant/blademvc.local/Core/Router.php(117): Core\Controller->__call('create', Array)
+#7 /vagrant/blademvc.local/public/index.php(41): Core\Router->dispatch('signup/create')
+#8 {main}
+Thrown in '/vagrant/blademvc.local/App/Models/User.php' on line 99
+[29-Jan-2018 18:13:03 UTC] Uncaught exception: 'ErrorException' with message 'preg_match(): Unknown modifier 'd''
+Stack trace:#0 [internal function]: Core\Error::errorHandler(2, 'preg_match(): U...', '/vagrant/bladem...', 99, Array)
+#1 /vagrant/blademvc.local/App/Models/User.php(99): preg_match('/.*/d.*/i', '')
+#2 /vagrant/blademvc.local/App/Models/User.php(51): App\Models\User->validate()
+#3 /vagrant/blademvc.local/App/Controllers/Signup.php(41): App\Models\User->save()
+#4 [internal function]: App\Controllers\Signup->createAction()
+#5 /vagrant/blademvc.local/Core/Controller.php(40): call_user_func_array(Array, Array)
+#6 /vagrant/blademvc.local/Core/Router.php(117): Core\Controller->__call('create', Array)
+#7 /vagrant/blademvc.local/public/index.php(41): Core\Router->dispatch('signup/create')
+#8 {main}
+Thrown in '/vagrant/blademvc.local/App/Models/User.php' on line 99
+[29-Jan-2018 18:14:08 UTC] Uncaught exception: 'ErrorException' with message 'preg_match(): Unknown modifier 'd''
+Stack trace:#0 [internal function]: Core\Error::errorHandler(2, 'preg_match(): U...', '/vagrant/bladem...', 107, Array)
+#1 /vagrant/blademvc.local/App/Models/User.php(107): preg_match('/.*/d.*/i', '')
+#2 /vagrant/blademvc.local/App/Models/User.php(51): App\Models\User->validate()
+#3 /vagrant/blademvc.local/App/Controllers/Signup.php(41): App\Models\User->save()
+#4 [internal function]: App\Controllers\Signup->createAction()
+#5 /vagrant/blademvc.local/Core/Controller.php(40): call_user_func_array(Array, Array)
+#6 /vagrant/blademvc.local/Core/Router.php(117): Core\Controller->__call('create', Array)
+#7 /vagrant/blademvc.local/public/index.php(41): Core\Router->dispatch('signup/create')
+#8 {main}
+Thrown in '/vagrant/blademvc.local/App/Models/User.php' on line 107
+[29-Jan-2018 18:14:35 UTC] Uncaught exception: 'ErrorException' with message 'preg_match(): Unknown modifier 'd''
+Stack trace:#0 [internal function]: Core\Error::errorHandler(2, 'preg_match(): U...', '/vagrant/bladem...', 107, Array)
+#1 /vagrant/blademvc.local/App/Models/User.php(107): preg_match('/.*/d.*/i', '')
+#2 /vagrant/blademvc.local/App/Models/User.php(51): App\Models\User->validate()
+#3 /vagrant/blademvc.local/App/Controllers/Signup.php(41): App\Models\User->save()
+#4 [internal function]: App\Controllers\Signup->createAction()
+#5 /vagrant/blademvc.local/Core/Controller.php(40): call_user_func_array(Array, Array)
+#6 /vagrant/blademvc.local/Core/Router.php(117): Core\Controller->__call('create', Array)
+#7 /vagrant/blademvc.local/public/index.php(41): Core\Router->dispatch('signup/create')
+#8 {main}
+Thrown in '/vagrant/blademvc.local/App/Models/User.php' on line 107
+[29-Jan-2018 18:15:01 UTC] Uncaught exception: 'ErrorException' with message 'preg_match(): Unknown modifier 'd''
+Stack trace:#0 [internal function]: Core\Error::errorHandler(2, 'preg_match(): U...', '/vagrant/bladem...', 107, Array)
+#1 /vagrant/blademvc.local/App/Models/User.php(107): preg_match('/.*/d.*/i', '')
+#2 /vagrant/blademvc.local/App/Models/User.php(51): App\Models\User->validate()
+#3 /vagrant/blademvc.local/App/Controllers/Signup.php(34): App\Models\User->save()
+#4 [internal function]: App\Controllers\Signup->createAction()
+#5 /vagrant/blademvc.local/Core/Controller.php(40): call_user_func_array(Array, Array)
+#6 /vagrant/blademvc.local/Core/Router.php(117): Core\Controller->__call('create', Array)
+#7 /vagrant/blademvc.local/public/index.php(41): Core\Router->dispatch('signup/create')
+#8 {main}
+Thrown in '/vagrant/blademvc.local/App/Models/User.php' on line 107
+[29-Jan-2018 18:19:35 UTC] Uncaught exception: 'ErrorException' with message 'preg_match(): Unknown modifier 'd''
+Stack trace:#0 [internal function]: Core\Error::errorHandler(2, 'preg_match(): U...', '/vagrant/bladem...', 107, Array)
+#1 /vagrant/blademvc.local/App/Models/User.php(107): preg_match('/.*/d.*/i', '')
+#2 /vagrant/blademvc.local/App/Models/User.php(51): App\Models\User->validate()
+#3 /vagrant/blademvc.local/App/Controllers/Signup.php(34): App\Models\User->save()
+#4 [internal function]: App\Controllers\Signup->createAction()
+#5 /vagrant/blademvc.local/Core/Controller.php(40): call_user_func_array(Array, Array)
+#6 /vagrant/blademvc.local/Core/Router.php(117): Core\Controller->__call('create', Array)
+#7 /vagrant/blademvc.local/public/index.php(41): Core\Router->dispatch('signup/create')
+#8 {main}
+Thrown in '/vagrant/blademvc.local/App/Models/User.php' on line 107
+[29-Jan-2018 18:19:49 UTC] Uncaught exception: 'ErrorException' with message 'preg_match(): Unknown modifier 'd''
+Stack trace:#0 [internal function]: Core\Error::errorHandler(2, 'preg_match(): U...', '/vagrant/bladem...', 107, Array)
+#1 /vagrant/blademvc.local/App/Models/User.php(107): preg_match('/.*/d.*/i', '')
+#2 /vagrant/blademvc.local/App/Models/User.php(51): App\Models\User->validate()
+#3 /vagrant/blademvc.local/App/Controllers/Signup.php(34): App\Models\User->save()
+#4 [internal function]: App\Controllers\Signup->createAction()
+#5 /vagrant/blademvc.local/Core/Controller.php(40): call_user_func_array(Array, Array)
+#6 /vagrant/blademvc.local/Core/Router.php(117): Core\Controller->__call('create', Array)
+#7 /vagrant/blademvc.local/public/index.php(41): Core\Router->dispatch('signup/create')
+#8 {main}
+Thrown in '/vagrant/blademvc.local/App/Models/User.php' on line 107
+[29-Jan-2018 18:20:22 UTC] Uncaught exception: 'ErrorException' with message 'preg_match(): Unknown modifier 'd''
+Stack trace:#0 [internal function]: Core\Error::errorHandler(2, 'preg_match(): U...', '/vagrant/bladem...', 107, Array)
+#1 /vagrant/blademvc.local/App/Models/User.php(107): preg_match('/.*/d.*/i', '')
+#2 /vagrant/blademvc.local/App/Models/User.php(51): App\Models\User->validate()
+#3 /vagrant/blademvc.local/App/Controllers/Signup.php(34): App\Models\User->save()
+#4 [internal function]: App\Controllers\Signup->createAction()
+#5 /vagrant/blademvc.local/Core/Controller.php(40): call_user_func_array(Array, Array)
+#6 /vagrant/blademvc.local/Core/Router.php(117): Core\Controller->__call('create', Array)
+#7 /vagrant/blademvc.local/public/index.php(41): Core\Router->dispatch('signup/create')
+#8 {main}
+Thrown in '/vagrant/blademvc.local/App/Models/User.php' on line 107
+[29-Jan-2018 18:21:11 UTC] Uncaught exception: 'ErrorException' with message 'preg_match(): Unknown modifier 'd''
+Stack trace:#0 [internal function]: Core\Error::errorHandler(2, 'preg_match(): U...', '/vagrant/bladem...', 107, Array)
+#1 /vagrant/blademvc.local/App/Models/User.php(107): preg_match('/.*/d.*/i', 'rrr')
+#2 /vagrant/blademvc.local/App/Models/User.php(51): App\Models\User->validate()
+#3 /vagrant/blademvc.local/App/Controllers/Signup.php(34): App\Models\User->save()
+#4 [internal function]: App\Controllers\Signup->createAction()
+#5 /vagrant/blademvc.local/Core/Controller.php(40): call_user_func_array(Array, Array)
+#6 /vagrant/blademvc.local/Core/Router.php(117): Core\Controller->__call('create', Array)
+#7 /vagrant/blademvc.local/public/index.php(41): Core\Router->dispatch('signup/create')
+#8 {main}
+Thrown in '/vagrant/blademvc.local/App/Models/User.php' on line 107
+[29-Jan-2018 18:22:42 UTC] Uncaught exception: 'ErrorException' with message 'preg_match(): Unknown modifier 'd''
+Stack trace:#0 [internal function]: Core\Error::errorHandler(2, 'preg_match(): U...', '/vagrant/bladem...', 107, Array)
+#1 /vagrant/blademvc.local/App/Models/User.php(107): preg_match('/.*/d+.*/i', '')
+#2 /vagrant/blademvc.local/App/Models/User.php(51): App\Models\User->validate()
+#3 /vagrant/blademvc.local/App/Controllers/Signup.php(34): App\Models\User->save()
+#4 [internal function]: App\Controllers\Signup->createAction()
+#5 /vagrant/blademvc.local/Core/Controller.php(40): call_user_func_array(Array, Array)
+#6 /vagrant/blademvc.local/Core/Router.php(117): Core\Controller->__call('create', Array)
+#7 /vagrant/blademvc.local/public/index.php(41): Core\Router->dispatch('signup/create')
+#8 {main}
+Thrown in '/vagrant/blademvc.local/App/Models/User.php' on line 107
+[29-Jan-2018 18:26:38 UTC] Uncaught exception: 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'will.stickles.sensei@gmail.com' for key 'email''
+Stack trace:#0 /vagrant/blademvc.local/App/Models/User.php(64): PDOStatement->execute()
+#1 /vagrant/blademvc.local/App/Controllers/Signup.php(34): App\Models\User->save()
+#2 [internal function]: App\Controllers\Signup->createAction()
+#3 /vagrant/blademvc.local/Core/Controller.php(40): call_user_func_array(Array, Array)
+#4 /vagrant/blademvc.local/Core/Router.php(117): Core\Controller->__call('create', Array)
+#5 /vagrant/blademvc.local/public/index.php(41): Core\Router->dispatch('signup/create')
+#6 {main}
+Thrown in '/vagrant/blademvc.local/App/Models/User.php' on line 64

@@ -1,0 +1,16 @@
+<?php $_shouldextend['5a5fe4e1f1709']=1; ?>
+
+<?php $this->startSection( 'title', 'Posts' ); ?>
+
+<?php $this->startSection( 'content' ); ?>
+    <h1>Welcome</h1>
+    <p>Hello from a BladeOne template, Posts-Edit</p>
+
+    <ul>
+        <?php $__currentLoopData = $params; $this->addLoop($__currentLoopData); foreach($__currentLoopData as $param): $this->incrementLoopIndices(); $loop = $this->getFirstLoop(); ?>
+            <li><?php echo static::e($param); ?></li>
+        <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
+    </ul>
+
+<?php $this->stopSection(); ?>
+<?php if (@$_shouldextend['5a5fe4e1f1709']) { echo $this->runChild( 'master' ); } ?>

@@ -1,0 +1,50 @@
+Daily Timesheet
+
+
+Employee name   <?php echo static::e($user->name); ?>
+
+Email address   <?php echo static::e($user->email); ?>
+
+
+Lunch hours     <?php echo static::e($hours->lunch_hours); ?>
+
+Start time      <?php echo static::e($hours->start_time); ?>
+
+End time        <?php echo static::e($hours->end_time); ?>
+
+Total hours     <?php echo static::e($hours->total_hours); ?>
+
+
+Start location  <?php echo static::e($hours->start_location); ?>
+
+Report date     <?php echo static::e($hours->report_date); ?>
+
+
+
+---------------------------------------------
+<?php $__currentLoopData = $projects; $this->addLoop($__currentLoopData); foreach($__currentLoopData as $project): $this->incrementLoopIndices(); $loop = $this->getFirstLoop(); ?>
+Project id    <?php echo static::e($project->id); ?>
+
+Project name  <?php echo static::e($project->project_name); ?>
+
+Client name   <?php echo static::e($project->client_name); ?>
+
+
+Time arrived  <?php echo static::e($project->time_arrived); ?>
+
+Time departed <?php echo static::e($project->time_departed); ?>
+
+
+Densities     <?php echo static::e($project->densities); ?>
+
+Concrete      <?php echo static::e($project->concrete); ?>
+
+Samples       <?php echo static::e($project->samples); ?>
+
+
+Remarks       <?php echo static::e($project->remarks); ?>
+
+
+
+--------------------------------------------
+<?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>

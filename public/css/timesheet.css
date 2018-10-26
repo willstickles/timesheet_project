@@ -1,0 +1,64 @@
+legend.project-border {
+    width:inherit; /* Or auto */
+    padding:0 10px; /* To give a bit of padding on the left and right */
+    border-bottom:none;
+}
+
+.fieldGroup  {
+    margin-top: 15px !important;
+    border: solid #ccc 2px;
+    padding-left: 3px;
+}
+
+.fieldGroupCopy  {
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+    border: solid #ccc 2px;
+    padding-left: 3px;
+}
+
+#timesheet {
+    font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 600px;
+}
+
+#timesheet td, #timesheet th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#timsheet tr:nth-child(even){ background-color: #f2f2f2; }
+
+#timesheet tr:hover { background-color: #ddd; }
+
+#timesheet th {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    text-align: left;
+    background-color: #4caf50;
+    color: white;
+}
+
+#projects {
+    font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 600px;
+}
+
+#projects td, #projects th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#projects tr:nth-child(even){ background-color: #f2f2f2; }
+
+#projects tr:hover { background-color: #ddd; }
+
+#projects th {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    text-align: left;
+    background-color: #558faf;
+    color: white;
+}

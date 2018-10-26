@@ -1,0 +1,9 @@
+<?php $_shouldextend['5a5fe441bbcc3']=1; ?>
+
+<?php $this->startSection( 'title', 'Add New Post' ); ?>
+
+<?php $this->startSection( 'content' ); ?>
+    <h1>Welcome</h1>
+    <p>Hello from a BladeOne template, Posts - Add New</p>
+<?php $this->stopSection(); ?>
+<?php if (@$_shouldextend['5a5fe441bbcc3']) { echo $this->runChild( 'master' ); } ?>
